@@ -1,0 +1,30 @@
+@import './base/reset';
+@import './variables/global';
+@import './themes/light';
+@import './themes/dark';
+
+#app {
+  min-height: 100vh;
+  font: var(--font-m);
+  color: var(--text);
+  background: var(--bg);
+}
+
+.content-page {
+  display: flex;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--icon);
+  border-radius: 38px;
+}
