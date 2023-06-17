@@ -1,0 +1,7 @@
+{
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "cssModules.camelCase": true,
+  "jest.autoRun": "off",
+  "svg.preview.background": "editor"
+}
