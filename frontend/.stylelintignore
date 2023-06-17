@@ -5,4 +5,4 @@
 *.md
 *.svg
 /node_modules
-/build
+/dist

@@ -1,18 +1,25 @@
-/*eslint-env node*/
-
 module.exports = {
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2021: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh', 'import', 'prettier', 'olegskar-fsd-checker', 'unused-imports'],
+  plugins: [
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'react-refresh',
+    'import',
+    'prettier',
+    'olegskar-fsd-checker',
+    'unused-imports',
+  ],
   rules: {
     'react-refresh/only-export-components': 'warn',
     'olegskar-fsd-checker/paths-checker': ['error', { alias: '@' }],
@@ -45,6 +52,10 @@ module.exports = {
         },
       },
     ],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     'react/display-name': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
