@@ -1,5 +1,13 @@
 .sidebar {
+  position: relative;
   width: max-content;
   max-width: 250px;
   height: 100%;
+
+  .theme-swither {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }
+
