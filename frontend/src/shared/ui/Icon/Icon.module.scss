@@ -1,0 +1,26 @@
+.icon {
+  color: var(--icon);
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.button {
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    .icon {
+      color: var(--accent);
+      transition: all 0.2s;
+    }
+  }
+}

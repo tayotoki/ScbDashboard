@@ -1,0 +1,39 @@
+.normal {
+  background: var(--dark-bg);
+}
+
+.light {
+  background: var(--light-bg);
+}
+
+.outlined {
+  border: 1px solid var(--accent);
+}
+
+.max {
+  width: 100%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.default {
+  border-radius: 12px;
+}
+
+.round {
+  border-radius: 32px;
+}

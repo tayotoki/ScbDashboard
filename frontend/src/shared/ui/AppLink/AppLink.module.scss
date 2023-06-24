@@ -1,0 +1,31 @@
+.app-link {
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.primary {
+  color: var(--text);
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.outlined {
+  color: var(--text);
+  border: 1px solid var(--icon);
+
+  &:hover {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+}
+
+.red {
+  color: var(--cancel);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
