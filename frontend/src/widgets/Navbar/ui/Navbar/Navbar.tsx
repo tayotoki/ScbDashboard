@@ -1,10 +1,11 @@
-import { Text } from '@/shared/ui/Text';
-import React from 'react';
+import Link from 'next/link';
+import React, { useState } from 'react';
 
 export const Navbar = () => {
   return (
-    <div className='h-16 bg-theme-lightBg flex justify-between px-4 items-center'>
-      <Text text='АРМ-КИП' size='l' className='text-orange-500' />
+    <div className='navbar bg-base-300 justify-between'>
+      <a className='btn btn-ghost normal-case text-xl'>АРМ-КИП</a>
+      <Link href='/login' className='btn btn-neutral'>Войти</Link>
     </div>
   );
 };

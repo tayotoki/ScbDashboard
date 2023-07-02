@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='ru'>
-      <body className={classNames('app', [roboto.variable, nunitoSans.variable], {})}>{children}</body>
+    <html lang='ru' data-theme='light'>
+      <body>{children}</body>
     </html>
   );
 }
