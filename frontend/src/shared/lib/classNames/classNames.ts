@@ -1,5 +1,5 @@
-type Mode = Record<string, string | boolean | undefined>;
-type Additional = Array<string | undefined>;
+export type Mode = Record<string, string | boolean | undefined>;
+export type Additional = Array<string | undefined>;
 
 type classNameType = (className: string, additional: Additional, mode: Mode) => string;
 
