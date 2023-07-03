@@ -1,6 +1,5 @@
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { ReactElement, ReactNode } from 'react';
-import cls from './MainLayout.module.css'
+import cls from './MainLayout.module.css';
 
 interface Props {
   header: ReactElement;
@@ -12,11 +11,11 @@ interface Props {
 
 export const MainLayout = ({ header, sidebar, content, toolbar, className }: Props) => {
   return (
-    <div className={classNames(cls.wrapper, [className], {})}>
+    <div className='h-full'>
       {header}
-      <div className={cls.main}>
+      <div className='flex'>
         {sidebar}
-        {content}
+        <div className='container mx-auto p-6'>{content}</div>
         {toolbar}
       </div>
     </div>

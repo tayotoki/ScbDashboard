@@ -1,11 +1,11 @@
 {
-    "stylelint.enable": true,
-    "stylelint.validate": [
-      "css",
-      "scss"
-    ],
-    "cssModules.camelCase": true,
-    "jest.autoRun": "off",
-    "svg.preview.background": "editor",
-    "folderTemplates.templateFolderPath": "/frontend/.fttemplates"
-  }
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "cssModules.camelCase": true,
+  "jest.autoRun": "off",
+  "svg.preview.background": "editor",
+  "folderTemplates.templateFolderPath": "/frontend/.fttemplates"
+}

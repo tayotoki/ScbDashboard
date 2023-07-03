@@ -1,9 +1,5 @@
-import { classNames } from '@/shared/lib/classNames/classNames';
 import './styles/globals.css';
-import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,8 +8,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={classNames('app', [inter.className], {})}>{children}</body>
+    <html lang='ru'>
+      <body className='app'>{children}</body>
     </html>
   );
 }
