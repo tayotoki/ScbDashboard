@@ -11,10 +11,10 @@ interface Props {
 
 export const MainLayout = ({ header, sidebar, content, toolbar, className }: Props) => {
   return (
-    <div className='h-full'>
+    <div>
       {header}
       <div className='flex'>
-        {sidebar}
+        <div className='p-2'>{sidebar}</div>
         <div className='container mx-auto p-6'>{content}</div>
         {toolbar}
       </div>

@@ -1,7 +1,5 @@
-import { classNames } from '@/shared/lib';
 import './styles/globals.css';
 import { ReactNode } from 'react';
-import { nunitoSans, roboto } from './styles/fonts';
 
 export const metadata = {
   title: 'Create Next App',

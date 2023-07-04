@@ -3,9 +3,13 @@ import React, { useState } from 'react';
 
 export const Navbar = () => {
   return (
-    <div className='navbar bg-base-300 justify-between'>
-      <a className='btn btn-ghost normal-case text-xl'>АРМ-КИП</a>
-      <Link href='/login' className='btn btn-neutral'>Войти</Link>
+    <div className='navbar justify-between'>
+      <Link href='/' className='btn btn-primary px-1'>
+        <span className='text-base-300 text-lg'>АРМ-КИП</span>
+      </Link>
+      <Link href='/login' className='btn btn-ghost'>
+        Войти
+      </Link>
     </div>
   );
 };
