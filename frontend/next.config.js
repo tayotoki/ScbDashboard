@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
 module.exports = {
   webpack(config) {
     const svgLoader = config.module.rules.find((rule) => rule?.test?.test?.('.svg'));
@@ -38,6 +40,8 @@ module.exports = {
 
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
     svgLoader.exclude = /\.svg$/i;
+
+    config.plugins.push(new ForkTsCheckerWebpackPlugin())
 
     return config;
   },
