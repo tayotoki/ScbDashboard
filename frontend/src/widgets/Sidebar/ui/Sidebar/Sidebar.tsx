@@ -2,7 +2,7 @@ import { FC, memo } from 'react';
 
 import { classNames } from '@/shared/lib';
 
-import { SidebarItemsType } from '../../modal/types/items';
+import { SidebarItemsType } from '../../model/types/items';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
 interface SidebarProps {

@@ -2,9 +2,8 @@
 import { FC } from 'react';
 
 import { classNames } from '@/shared/lib';
-import { SidebarItemsType } from '../../modal/types/items';
+import { SidebarItemsType } from '../../model/types/items';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
 
 interface SidebarItemProps {
